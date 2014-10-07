@@ -59,6 +59,11 @@
 /* ***************************************
 	TOPBAR MENU
 **************************************** */
+.top-bar {
+	&.expanded {
+		background: $topbar-bg-color;
+	}
+}
 .elgg-menu-topbar {
 
 	.name h1 a {

@@ -6,6 +6,11 @@
 @import "settings/foundation";
 @import "settings/font-awesome";
 
+$no-foundation-globals: true !default;
+@if ($no-foundation-globals) {
+	@include exports("global") {}
+}
+
 @import "components/foundation";
 @import "components/font-awesome";
 

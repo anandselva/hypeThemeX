@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: $header-line-height;
 	margin-top: 0;
 	font-weight: normal;
-	word-break: break-all;
+	word-break: break-word;
 }
 h1 { font-size: $h1-font-size; }
 h2 { font-size: $h2-font-size; }
@@ -22,6 +22,7 @@ acronym {
 
 ol, ul {
 	list-style: none;
+	margin-left: 0;
 }
 
 .elgg-heading-site, .elgg-heading-site:hover {
@@ -68,4 +69,7 @@ ol, ul {
 
 .elgg-output {
 	margin: rem-calc(10px) 0;
+	ul {
+		margin-left: rem-calc(18);
+	}
 }

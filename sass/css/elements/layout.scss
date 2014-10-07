@@ -123,11 +123,11 @@
 
 	@media #{$medium-up} {
 		.elgg-main {
-			@include grid-column($columns:9, $pull:3);
+			@include grid-column($columns:9);
 			border-right: 1px solid $border-color;
 		}
 		.elgg-sidebar {
-			@include grid-column($columns:3, $push:9, $float: right, $last-column: true);
+			@include grid-column($columns:3, $float: right, $last-column: true);
 		}
 	}
 
@@ -150,13 +150,13 @@
 
 	@media #{$medium-up} {
 		.elgg-main {
-			@include grid-column($columns:7,$pull:3);
+			@include grid-column($columns:7);
 		}
 		.elgg-sidebar {
-			@include grid-column($columns:3,$push:9,$last-column:true);
+			@include grid-column($columns:3,$last-column:true);
 		}
 		.elgg-sidebar-alt {
-			@include grid-column($columns:2, $pull: 3);
+			@include grid-column($columns:2);
 		}
 
 	}
