@@ -28,8 +28,6 @@ $include-html-progress-classes: false;
 $include-html-magellan-classes: false;
 $include-html-tooltip-classes: $include-html-classes;
 
-@charset "UTF-8";
-
 @import "init";
 .clearfix {
 	@include clearfix;
