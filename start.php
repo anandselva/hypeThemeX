@@ -73,7 +73,7 @@ function setup_menus() {
 	elgg_register_menu_item('topbar', array(
 		'name' => 'toggle',
 		'href' => '#',
-		'text' => elgg_echo('menu'),
+		'text' => '<span>' . elgg_echo('menu') . '</span>',
 		'item_class' => 'toggle-topbar menu-icon',
 		'priority' => 900,
 		'section' => 'title-area',
