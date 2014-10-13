@@ -1,7 +1,6 @@
 {
 	"name": "hypejunction/hypethemex",
 	"type": "elgg-plugin",
-	"repository": "hypeJunction/hypeThemeX",
 	"description": "Responsive theme for Elgg based on Zurb Foundation",
 	"homepage": "http://hypejunction.com",
 	"minimum-stability": "stable",
