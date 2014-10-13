@@ -11,7 +11,7 @@ if (array_key_exists('value', $vars)) {
 } elseif ($value = get_input('q', get_input('tag', NULL))) {
 	$value = $value;
 } else {
-	$value = elgg_echo('search');
+	$value = '';
 }
 
 $class = "elgg-search";
@@ -36,7 +36,17 @@ $display_query = htmlspecialchars($display_query, ENT_QUOTES, 'UTF-8', false);
 
 <form class="<?php echo $class; ?>" action="<?php echo elgg_get_site_url(); ?>search" method="get">
 	<fieldset>
-		<input type="text" class="search-input" size="21" name="q" value="<?php echo $display_query; ?>" onblur="if (this.value=='') { this.value='<?php echo elgg_echo('search'); ?>' }" onfocus="if (this.value=='<?php echo elgg_echo('search'); ?>') { this.value='' };" />
+		<?php
+		$attrs = elgg_format_attributes(array(
+			'type' => 'text',
+			'class' => 'search-input',
+			'size' => 21,
+			'name' => 'q',
+			'value' => $display_query,
+			'placeholder' => elgg_echo('search'),
+		));
+		?>
+		<input <?php echo $attrs ?> />
 		<input type="submit" value="<?php echo elgg_echo('search:go'); ?>" class="search-submit-button" />
 		<input type="hidden" name="search_type" value="all" />
 		<i class="elgg-icon elgg-icon-search"></i>

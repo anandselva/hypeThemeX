@@ -29,6 +29,11 @@
 				background: none;
 				border: none;
 			}
+			@include input-placeholder {
+				font-size: $elgg-toolbar-font-size;
+				color: white;
+			}
+
 		}
 		.elgg-icon-search {
 			position: absolute;
