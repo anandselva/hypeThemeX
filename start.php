@@ -27,8 +27,8 @@ function init() {
 		return;
 	}
 
-	elgg_extend_view('css/elgg', 'css/theme/custom', 999);
-	elgg_extend_view('css/elgg', 'css/theme/plugins', 999);
+	elgg_extend_view('css/elgg', 'css/theme/custom.css', 999);
+	elgg_extend_view('css/elgg', 'css/theme/plugins.css', 999);
 
 	elgg_extend_view('page/elements/head', 'framework/metatags/viewport');
 
