@@ -11,12 +11,13 @@ $profile-small: "only screen and (min-width: #{$profile-small-screen})";
 	.elgg-inner {
 		@include grid-row;
 		border: 1px solid $border-color;
+		padding: 0;
 	}
 }
 
 #profile-owner-block {
 	@include grid-column(12);
-	padding: rem-calc(20px);
+	padding: rem-calc(15);
 	background-color: lighten($border-color, 10%);
 	.elgg-menu-owner-block li a {
 		background: white;
@@ -79,7 +80,7 @@ $profile-small: "only screen and (min-width: #{$profile-small-screen})";
 
 	@media #{$medium-up} {
 		@include grid-column(3);
-		padding: rem-calc(20px);
+		padding: rem-calc(15);
 		.elgg-avatar {
 			@include grid-column(12);
 			padding: 0;
