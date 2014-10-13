@@ -46,14 +46,14 @@
 
 .elgg-menu {
 	font-family: $elgg-menu-font-family;
+	.hidden {
+		display: none !important;
+	}
 }
 
 .elgg-menu-hz {
 	@include inline-list;
 	margin: 0;
-	& .hidden {
-		display: none;
-	}
 }
 
 /* ***************************************
