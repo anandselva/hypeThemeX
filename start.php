@@ -18,6 +18,8 @@ elgg_register_event_handler('pagesetup', 'system', __NAMESPACE__ . '\\setup_menu
 
 /**
  * Initialize the plugin
+ *
+ * @return void
  */
 function init() {
 
@@ -57,6 +59,8 @@ function init() {
 
 /**
  * Customize the topbar menu so that it works with Foundation
+ *
+ * @return void
  */
 function setup_menus() {
 
