@@ -3,8 +3,8 @@
 // Fix an issue with global styles being appended multiple times
 $modules: () !default;
 @mixin exports($name) {
-  @if(not index($modules, $name)) {
-    $modules: append($modules, $name) !global;
-    @content;
-  }
+	@if(not index($modules, $name)) {
+		$modules: append($modules, $name) !global;
+		@content;
+	}
 }

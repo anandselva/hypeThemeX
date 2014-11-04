@@ -4,14 +4,10 @@ form, .elgg-form {
 	margin: 0;
 	@include clearfix;
 
-	fieldset {
+	& > fieldset {
 		border: none;
 		margin: 0;
 		padding: 0
-	}
-
-	& > fieldset {
-		padding: rem-calc(15);
 	}
 	
 	label {
