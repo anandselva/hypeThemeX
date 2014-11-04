@@ -1,5 +1,6 @@
 hypeThemeX
 ==========
+[![Build Status](https://travis-ci.org/hypeJunction/hypeThemeX.svg?branch=master)](https://travis-ci.org/hypeJunction/hypeThemeX)
 
 Responsive theme for Elgg built with SCSS and Foundation 5
 
